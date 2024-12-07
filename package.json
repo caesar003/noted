@@ -1,0 +1,22 @@
+{
+  "name": "noted",
+  "version": "1.0.0",
+  "repository": "https://github.com/caesar003/noted.git",
+  "description": "note-taker-cli nodejs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "./postbuild.sh"
+  },
+  "keywords": [
+    "Note taking cli"
+  ],
+  "author": "caesar003",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+  
+}

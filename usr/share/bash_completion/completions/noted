@@ -1,0 +1,15 @@
+#!/bin/bash
+
+_noted_completions() {
+	local cur opts
+	cur="${COMP_WORDS[COMP_CWORD]}"
+	opts="-a -u -d -l -e -v -h"
+
+	# If the current word is after 'note' (the command), complete the options
+	if [[ ${cur} == -* ]]; then
+		COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
+	fi
+}
+
+# Register the function to handle the completion for 'note'
+complete -F _noted_completions noted

@@ -1,0 +1,8 @@
+node_modules
+test*
+*.txt
+dist/
+notes
+*.deb
+debian/noted/usr
+*.swp

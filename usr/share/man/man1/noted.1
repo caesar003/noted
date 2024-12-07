@@ -1,0 +1,75 @@
+.\" Manpage for the note manager CLI program
+.TH NOTED 1 "December 2024" "1.0.0" "Note Manager Command"
+.SH NAME
+noted \- CLI tool to manage notes
+.SH SYNOPSIS
+.B note
+[\-a]
+[\-u \fIid\fR]
+[\-d \fIid\fR]
+[\-l]
+[\-e \fIid\fR]
+[\-v]
+[\-h]
+.SH DESCRIPTION
+The
+.B note
+command is a simple CLI tool for managing notes. It allows users to create, update, delete, list, and view notes.
+
+.SH OPTIONS
+.TP
+.B \-a
+Create a new note. Prompts the user for the title, content, and tags for the note.
+.TP
+.B \-u \fIid\fR
+Update an existing note by its ID. The user is prompted to modify the title, content, and tags.
+.TP
+.B \-d \fIid\fR
+Delete an existing note by its ID.
+.TP
+.B \-l
+List all notes.
+.TP
+.B \-e \fIid\fR
+View details of a specific note by its ID. Shows the title, content, creation, and update times, as well as associated tags.
+.TP
+.B \-v
+Display the version information of the program.
+.TP
+.B \-h
+Display this help message.
+.SH EXAMPLES
+.TP
+Create a new note:
+.nf
+noted -a
+.fi
+.TP
+Update a noted with ID prefix "abc":
+.nf
+noted -u abc
+.fi
+.TP
+Delete a noted with ID prefix "xyz":
+.nf
+noted -d xyz
+.fi
+.TP
+List all notes:
+.nf
+noted -l
+.fi
+.TP
+View details of a noted with ID prefix "def":
+.nf
+noted -e def
+.fi
+.TP
+Display version:
+.nf
+noted -v
+.fi
+.SH SEE ALSO
+.BR node (1)
+.SH AUTHOR
+Written by caesar003.

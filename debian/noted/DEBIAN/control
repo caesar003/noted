@@ -1,0 +1,8 @@
+Package: noted
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: nodejs
+Maintainer: Caesar caesarmuksid@gmail.com
+Description: noted is note taking cli program written in javascript
